@@ -508,7 +508,8 @@
     left: -30px;
     bottom: 30px;
     border-radius: 10px;
-    background: var(--bs-secondary);
+    background: #FFA51E;
+    color: #FFA51E;
 }
 
 .about .about-img .about-exp {
