@@ -3,10 +3,17 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Contect Us - Rem Production</title>
+        <title>Rem Production</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
+
+            <!-- Add favicon -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- or for different sizes and formats -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="32x32">
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" sizes="32x32">
+        <link rel="apple-touch-icon" type="image/png" href="./img/favicon.png" sizes="180x180">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,52 +50,79 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary"></i>Contact Us - Rem</h1>
+                    <h1 class="text-primary" style="color: #FFA51E;"></i>Rem Production</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="color: #FFA51E; border: 1px solid #FFA51E;">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Press</a>
-                        <a href="blog.html" class="nav-item nav-link">Portfolio</a>
+                        <a href="service.html" class="nav-item nav-link">What We Do</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item">Lifestyle</a>
-                                <a href="product.html" class="dropdown-item">Our Product</a>
+                                <a href="aqeekah.html" class="dropdown-item">Aqeekah</a>
+                                <a href="birthday.html" class="dropdown-item">Birthday</a>
+                                <a href="dinner.html" class="dropdown-item">Corporate Dinner</a>
+                                <a href="birthday.html" class="dropdown-item">Birthday</a>
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="nikkah.html" class="dropdown-item">Nikkah Ceremony</a>
+                                <a href="qawali.html" class="dropdown-item">Qawali Night</a>
+                                <a href="terms.html" class="dropdown-item">Terms & Conditions</a>
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="wedding.html" class="dropdown-item">Wedding Ceremony</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="d-none d-xl-flex me-3">
-                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                        <div class="d-flex flex-column border-primary">
                             <span class="text-body">Get Quote</span>
                             <a href="tel:+923132085283"><span class="text-primary">Free: +92 313 2085283</span></a>
                         </div>
                     </div>
-                    <a href="tel:+923132085283" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Call Now</a>
+                    <a href="tel:+923132085283" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
                 </div>
             </nav>
+
 
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
                 <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
                     <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active text-primary">Contact</li>
+                        <li class="breadcrumb-item active text-primary">About</li>
                     </ol>    
                 </div>
             </div>
             <!-- Header End -->
         </div>
         <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
 
         <!-- feature Start -->
         <div class="container-fluid feature bg-light py-5">
