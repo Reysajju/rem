@@ -289,11 +289,13 @@
     border-top-right-radius: 0;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 0;
+
 }
 
 .carousel .carousel-control-prev .carousel-control-prev-icon:hover,
 .carousel .carousel-control-next .carousel-control-next-icon:hover {
-    background: var(--bs-secondary);
+    background: transparent !important;
+    color: #FFA51E;
 }
 
 .carousel .carousel-inner .carousel-item {
