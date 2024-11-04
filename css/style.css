@@ -223,7 +223,7 @@
         left: 50%;
         transform: translateX(-50%);
         border: 10px solid;
-        border-color: transparent transparent var(--bs-primary) transparent;
+        border-color: transparent transparent #FFA51E transparent;
         opacity: 0;
         transition: 0.5s;
     }
