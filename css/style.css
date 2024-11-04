@@ -310,7 +310,8 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    background: linear-gradient(rgba(66, 43, 0, 0.7), rgba(66, 43, 0, 0.7));
+    background: transparent !important;
+    color: #FFA51E;
     background-size: cover;
 }
 
