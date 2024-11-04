@@ -105,7 +105,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: #FFA51E;
 }
 
 .navbar-light .navbar-brand img {
