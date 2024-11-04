@@ -100,7 +100,7 @@
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--bs-dark);
+    color: #FFA51E;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -115,6 +115,7 @@
 
 .sticky-top.navbar-light .navbar-brand img {
     max-height: 45px;
+    color: #FFA51E;
 }
 
 .navbar .dropdown-toggle::after {
