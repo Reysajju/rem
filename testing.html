@@ -36,21 +36,32 @@
         <link href="css/style.css" rel="stylesheet">
         <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
         <style>
-            /* CSS for making images 170% of body container width */
+
+/* CSS for making images 65% of the container's width and responsive */
 .masonry-gallery-container {
-    overflow: hidden; /* Ensures the large images don't overflow the container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images within the container */
+    gap: 10px; /* Add some spacing between images */
+}
+
+.masonry-gallery-container .grid-item {
+    flex: 1 1 65%; /* Make each grid item responsive and 65% of the container width */
+    max-width: 65%; /* Limit each item’s width to 65% of the container */
 }
 
 .masonry-gallery-container .grid-item img {
-    width: 75vw; /* Makes each image 75% of the viewport width */
-    max-width: none; /* Allows the image to exceed its natural max width */
-    height: auto; /* Maintains aspect ratio */
-    margin: auto; /* Centers the images */
+    width: 100%; /* Make each image fully occupy its container */
+    height: auto; /* Maintain aspect ratio */
     display: block;
-    object-fit: cover; /* Ensures the images scale nicely without stretching */
+    object-fit: cover; /* Ensures images scale nicely without stretching */
+    border-radius: 10px; /* Optional: Add rounded corners */
 }
 
+
         </style>
+
+
 
     </head>
 
