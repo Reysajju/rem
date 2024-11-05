@@ -34,6 +34,37 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            /* CSS for responsive masonry-style gallery */
+            .masonry-gallery-container {
+                display: grid;
+                gap: 10px; /* Space between images */
+                overflow: hidden;
+            }
+        
+            .masonry-gallery-container .grid-item img {
+                width: 100%; /* Image fills the container without overflow */
+                height: auto; /* Maintains aspect ratio */
+                object-fit: cover; /* Crops nicely within the container */
+                display: block;
+            }
+            
+            /* Adjust spacing and columns on larger screens */
+            @media (min-width: 768px) {
+                .masonry-gallery-container {
+                    gap: 15px;
+                }
+            }
+        
+            @media (min-width: 1200px) {
+                .masonry-gallery-container {
+                    gap: 20px;
+                }
+            }
+        
+                </style>
+
     </head>
 
     <body>
@@ -123,7 +154,45 @@
         </div>
         <!-- Modal Search End -->
 
-
+        <!-- Feature Start -->
+        <div class="container-fluid feature bg-light py-5" style="background-color: #ffa51e9f;">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Our Cool Gallery</h2>
+                </div>
+            </div>
+            <div class="masonry-gallery-container">
+                <div class="masonry-grid">
+                    <!-- Image Blocks -->
+                    <div class="grid-item"><img src="img/dinner/Image_ (1).jpg" class="img-fluid rounded shadow-sm" alt="Image 25"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (2).jpg" class="img-fluid rounded shadow-sm" alt="Image 26"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (3).jpg" class="img-fluid rounded shadow-sm" alt="Image 27"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (4).jpg" class="img-fluid rounded shadow-sm" alt="Image 28"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (5).jpg" class="img-fluid rounded shadow-sm" alt="Image 29"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (6).jpg" class="img-fluid rounded shadow-sm" alt="Image 30"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (7).jpg" class="img-fluid rounded shadow-sm" alt="Image 31"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (8).jpg" class="img-fluid rounded shadow-sm" alt="Image 32"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (9).jpg" class="img-fluid rounded shadow-sm" alt="Image 33"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (10).jpg" class="img-fluid rounded shadow-sm" alt="Image 34"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (11).jpg" class="img-fluid rounded shadow-sm" alt="Image 35"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (12).jpg" class="img-fluid rounded shadow-sm" alt="Image 36"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (13).jpg" class="img-fluid rounded shadow-sm" alt="Image 37"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (14).jpg" class="img-fluid rounded shadow-sm" alt="Image 38"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (15).jpg" class="img-fluid rounded shadow-sm" alt="Image 39"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (16).jpg" class="img-fluid rounded shadow-sm" alt="Image 40"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (17).jpg" class="img-fluid rounded shadow-sm" alt="Image 41"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (17).jpg" class="img-fluid rounded shadow-sm" alt="Image 42"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (18).jpg" class="img-fluid rounded shadow-sm" alt="Image 43"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (18).jpg" class="img-fluid rounded shadow-sm" alt="Image 43"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (19).jpg" class="img-fluid rounded shadow-sm" alt="Image 43"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (20).jpg" class="img-fluid rounded shadow-sm" alt="Image 43"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (22).jpg" class="img-fluid rounded shadow-sm" alt="Image 43"></div>
+                    <div class="grid-item"><img src="img/dinner/Image_ (21).jpg" class="img-fluid rounded shadow-sm" alt="Image 44"></div>
+                    <!-- End of Image Blocks -->
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
         
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s" style="background-color: #ffa51e9f;">
