@@ -123,11 +123,57 @@
         </div>
         <!-- Modal Search End -->
 
-        <!-- feature Start -->
-        <div class="container-fluid feature bg-light py-5" style="background-color: #ffa51e9f;">
+<!-- feature Start -->
+<div class="container-fluid feature bg-light py-5" style="background-color: #ffa51e9f;">
+    <div id="image-gallery" class="row">
+        <!-- Images will be inserted here by JavaScript -->
+    </div>
+</div>
+<!-- feature End -->
 
-        </div>
-        <!-- feature End -->
+<script>
+    // List of image filenames (replace with your actual image filenames)
+    const images = [
+        'image_1.jpg',  // Example image filename
+        'image_2.jpg',  // Example image filename
+        'image_3.jpg',   // Example image filename
+        'image_4.jpg',
+        'image_5.jpg',
+        'image_6.jpg',
+        'image_7.jpg',
+        'image_8.jpg',
+        'image_9.jpg',
+        'image_10.jpg',
+        'image_11.jpg',
+        'image_12.jpg',
+        'image_13.jpg',
+        'image_14.jpg',
+        'image_15.jpg',
+    ];
+
+    // Get the image gallery container
+    const imageGallery = document.getElementById('image-gallery');
+
+    // Loop through the images array
+    images.forEach(image => {
+        // Create a column div for Bootstrap layout
+        const colDiv = document.createElement('div');
+        colDiv.classList.add('col-md-4');  // Adjust column size as needed
+
+        // Create an image element
+        const imgElement = document.createElement('img');
+        imgElement.src = `./nikkah/${image}`;  // Path to the image
+        imgElement.classList.add('img-fluid');  // Make the image responsive
+        imgElement.alt = image;  // Add an alt attribute
+
+        // Append the image to the column div
+        colDiv.appendChild(imgElement);
+
+        // Append the column div to the image gallery
+        imageGallery.appendChild(colDiv);
+    });
+</script>
+
 
 
 
