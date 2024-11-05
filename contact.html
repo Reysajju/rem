@@ -135,16 +135,16 @@
                             <p class="mb-0">Fill this from to send us Message or query if link is broken use this link to fill <a class="text-primary fw-bold" href="https://forms.gle/vmQHsaGBUWirZYqy6">this form</a>.</p>
                         </div>
                         <h2>Send Us a Message</h2>
-                        <form id="contact-form">
+                        <form id="contact-form" action="/send" method="POST">
                             <label for="firstName">First Name:</label>
                             <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-                        
+                    
                             <label for="lastName">Last Name:</label>
                             <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-                        
+                    
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        
+                    
                             <label for="eventType">Event Type:</label>
                             <select id="eventType" name="eventType" required>
                                 <option value="" disabled selected>Select Event Type</option>
@@ -158,10 +158,10 @@
                                 <option value="Testimonial">Testimonial</option>
                                 <option value="Wedding Ceremony">Wedding Ceremony</option>
                             </select>
-                        
+                    
                             <label for="eventDetails">Event Details:</label>
                             <textarea id="eventDetails" name="eventDetails" placeholder="Event Details" required></textarea>
-                        
+                    
                             <button type="submit">Send Message</button>
                         </form>
                         
