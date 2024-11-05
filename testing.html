@@ -37,25 +37,35 @@
         <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
         <style>
 
-/* CSS for making images 65% of the container's width and responsive */
+            /* General container styling */
 .masonry-gallery-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the images within the container */
-    gap: 10px; /* Add some spacing between images */
+    flex-wrap: wrap; /* Allows images to wrap to the next line */
+    gap: 1rem; /* Adds space between images */
+    justify-content: center; /* Centers images within the container */
+    padding: 1rem;
 }
 
+/* Image item styling */
 .masonry-gallery-container .grid-item {
-    flex: 1 1 65%; /* Make each grid item responsive and 65% of the container width */
-    max-width: 65%; /* Limit each item’s width to 65% of the container */
+    flex: 1 1 45%; /* Each image takes 45% of the container width */
+    max-width: 45%; /* Ensures that images don’t exceed 45% of screen width */
+    box-sizing: border-box; /* Ensures padding doesn’t add to width */
 }
 
 .masonry-gallery-container .grid-item img {
-    width: 100%; /* Make each image fully occupy its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    object-fit: cover; /* Ensures images scale nicely without stretching */
-    border-radius: 10px; /* Optional: Add rounded corners */
+    width: 100%; /* Ensures image fills the grid item */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Scales images within the grid item */
+    border-radius: 0.5rem; /* Adds rounded corners */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .masonry-gallery-container .grid-item {
+        flex: 1 1 100%; /* Makes each image take full width on smaller screens */
+        max-width: 100%; /* Ensures images are full-width on mobile */
+    }
 }
 
 
