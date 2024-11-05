@@ -262,65 +262,45 @@ ul {
                             <p class="mb-0">Fill this from to send us Message or query if link is broken use this link to fill <a class="text-primary fw-bold" href="https://forms.gle/vmQHsaGBUWirZYqy6">this form</a>.</p>
                         </div>
                         <h2>Send Us a Message</h2>
-    <form id="contact-form">
-        <h1>Contact Form</h1>
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-        <label for="eventType">Event Type:</label>
-        <select id="eventType" name="eventType" required>
-            <option value="" disabled selected>Select Event Type</option>
-            <option value="Aqeekah">Aqeekah</option>
-            <option value="Birthday">Birthday</option>
-            <option value="Corporate Dinner">Corporate Dinner</option>
-            <option value="Features">Features</option>
-            <option value="Nikkah Ceremony">Nikkah Ceremony</option>
-            <option value="Qawali Night">Qawali Night</option>
-            <option value="Terms & Conditions">Terms & Conditions</option>
-            <option value="Testimonial">Testimonial</option>
-            <option value="Wedding Ceremony">Wedding Ceremony</option>
-        </select>
-
-        <label for="eventDetails">Event Details:</label>
-        <textarea id="eventDetails" name="eventDetails" placeholder="Event Details" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-    <div class="message" id="response-message"></div>
-
-    <script>
-        const form = document.getElementById('contact-form');
-        const responseMessage = document.getElementById('response-message');
-
-        form.addEventListener('submit', async (event) => {
-            event.preventDefault(); // Prevent the default form submission
-
-            const formData = new FormData(form);
-
-            try {
-                const response = await fetch('/send', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                if (response.ok) {
-                    responseMessage.innerHTML = 'Message sent successfully!';
-                    form.reset(); // Clear the form
-                } else {
-                    responseMessage.innerHTML = 'Error sending message. Please try again.';
-                }
-            } catch (error) {
-                responseMessage.innerHTML = 'Error sending message. Please try again.';
-                console.error('Error:', error);
-            }
-        });
-    </script>
+                        <form id="contact-form" action="/success" method="POST" netlify>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                            <label for="eventType">Event Type:</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="" disabled selected>Select Event Type</option>
+                                <option value="Aqeekah">Aqeekah</option>
+                                <option value="Birthday">Birthday</option>
+                                <option value="Corporate Dinner">Corporate Dinner</option>
+                                <option value="Features">Features</option>
+                                <option value="Nikkah Ceremony">Nikkah Ceremony</option>
+                                <option value="Qawali Night">Qawali Night</option>
+                                <option value="Terms & Conditions">Terms & Conditions</option>
+                                <option value="Testimonial">Testimonial</option>
+                                <option value="Wedding Ceremony">Wedding Ceremony</option>
+                            </select>
+                    
+                            <label for="eventDetails">Event Details:</label>
+                            <textarea id="eventDetails" name="eventDetails" placeholder="Event Details" required></textarea>
+                    
+                            <button type="submit">Send Message</button>
+                        </form>
+                    
+                        <script>
+                            // Optional: Add JavaScript to handle the form submission response
+                            const form = document.getElementById('contact-form');
+                            form.addEventListener('submit', (event) => {
+                                event.preventDefault(); // Prevent default form submission
+                                alert('Form submitted!'); // Notify user
+                                form.reset(); // Reset the form after submission
+                            });
+                        </script>
                         
                         <div id="response"></div> <!-- Element to display response messages -->
                         
