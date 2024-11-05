@@ -36,42 +36,21 @@
         <link href="css/style.css" rel="stylesheet">
         <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
         <style>
-
-            /* General container styling */
+            /* CSS for making images 170% of body container width */
 .masonry-gallery-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows images to wrap to the next line */
-    gap: 1rem; /* Adds space between images */
-    justify-content: center; /* Centers images within the container */
-    padding: 1rem;
-}
-
-/* Image item styling */
-.masonry-gallery-container .grid-item {
-    flex: 1 1 45%; /* Each image takes 45% of the container width */
-    max-width: 45%; /* Ensures that images don’t exceed 45% of screen width */
-    box-sizing: border-box; /* Ensures padding doesn’t add to width */
+    overflow: hidden; /* Ensures the large images don't overflow the container */
 }
 
 .masonry-gallery-container .grid-item img {
-    width: 100%; /* Ensures image fills the grid item */
+    width: 75vw; /* Makes each image 75% of the viewport width */
+    max-width: none; /* Allows the image to exceed its natural max width */
     height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Scales images within the grid item */
-    border-radius: 0.5rem; /* Adds rounded corners */
+    margin: auto; /* Centers the images */
+    display: block;
+    object-fit: cover; /* Ensures the images scale nicely without stretching */
 }
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .masonry-gallery-container .grid-item {
-        flex: 1 1 100%; /* Makes each image take full width on smaller screens */
-        max-width: 100%; /* Ensures images are full-width on mobile */
-    }
-}
-
 
         </style>
-
-
 
     </head>
 
