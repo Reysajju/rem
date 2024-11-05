@@ -36,12 +36,13 @@
         <link href="css/style.css" rel="stylesheet">
         <style>
             
-form {
+            form {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(250, 246, 246, 0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 450px; /* Adjust width as needed */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width for larger screens */
 }
 
 label {
@@ -100,6 +101,28 @@ ul {
 .error {
     color: red;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    form {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        font-size: 16px; /* Increase font size for easier typing */
+    }
+
+    button {
+        font-size: 18px; /* Increase button font size */
+    }
 }
 
         </style>
