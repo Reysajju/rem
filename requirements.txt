@@ -1,4 +1,0 @@
-Flask==2.3.2              # Flask framework
-Flask-Mail==0.9.1        # Extension for sending emails
-python-dotenv==1.0.0     # Load environment variables from a .env file
-gunicorn==22.0.0

@@ -135,7 +135,7 @@
                             <p class="mb-0">Fill this from to send us Message or query if link is broken use this link to fill <a class="text-primary fw-bold" href="https://forms.gle/vmQHsaGBUWirZYqy6">this form</a>.</p>
                         </div>
                         <h2>Send Us a Message</h2>
-                        <form id="contact-form" action="/send" method="POST">
+                        <form id="contact-form" action="/success" method="POST" netlify>
                             <label for="firstName">First Name:</label>
                             <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
                     
@@ -164,6 +164,16 @@
                     
                             <button type="submit">Send Message</button>
                         </form>
+                    
+                        <script>
+                            // Optional: Add JavaScript to handle the form submission response
+                            const form = document.getElementById('contact-form');
+                            form.addEventListener('submit', (event) => {
+                                event.preventDefault(); // Prevent default form submission
+                                alert('Form submitted!'); // Notify user
+                                form.reset(); // Reset the form after submission
+                            });
+                        </script>
                         
                         <div id="response"></div> <!-- Element to display response messages -->
                         
