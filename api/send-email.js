@@ -1,37 +1,37 @@
 // api/send-email.js
-import emailjs from 'emailjs';
+import emailjs from 'emailjs'; // Make sure this package is installed
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        // Destructure the request body to get user inputs
-        const { firstName, lastName, email: userEmail, eventType, eventDetails } = req.body;
+        const { firstName, lastName, email, eventType, eventDetails } = req.body;
 
-        // Set up the email server connection using EmailJS
+        // Validate input data
+        if (!firstName || !lastName || !email || !eventType || !eventDetails) {
+            return res.status(400).json({ error: 'All fields are required' });
+        }
+
         const server = emailjs.server.connect({
             user: 'remproduction786@gmail.com', // Your Email
-            password: 'hdjlbkossgahmqlq', // Your Email App Password
+            password: 'hdjlbkossgahmqlq', // Your Password
             host: 'smtp.gmail.com', // Your SMTP host
             ssl: true
         });
 
-        // Prepare the message object
         const message = {
-            text: `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${userEmail}\nEvent Type: ${eventType}\nEvent Details: ${eventDetails}`,
-            from: userEmail, // User's email from the form
-            to: 'remproduction786@gmail.com', // Your email address where you receive notifications
+            text: `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nEvent Type: ${eventType}\nEvent Details: ${eventDetails}`,
+            from: email, // Use the user's email
+            to: 'remproduction786@gmail.com', // Your email to receive the message
             subject: 'New Contact Us Form Submission'
         };
 
-        // Send the email
-        server.send(message, function (err) {
+        server.send(message, function (err, message) {
             if (err) {
-                console.error('Failed to send email:', err); // Log the error for debugging
+                console.error('Failed to send email:', err); // Log the error
                 return res.status(500).json({ error: 'Failed to send email' });
             }
             return res.status(200).json({ success: 'Message sent successfully!' });
         });
     } else {
-        // Handle unsupported request methods
         res.setHeader('Allow', ['POST']);
         res.status(405).end(`Method ${req.method} Not Allowed`);
     }
