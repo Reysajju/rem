@@ -34,6 +34,37 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            /* CSS for responsive masonry-style gallery */
+            .masonry-gallery-container {
+                display: grid;
+                gap: 10px; /* Space between images */
+                overflow: hidden;
+            }
+        
+            .masonry-gallery-container .grid-item img {
+                width: 100%; /* Image fills the container without overflow */
+                height: auto; /* Maintains aspect ratio */
+                object-fit: cover; /* Crops nicely within the container */
+                display: block;
+            }
+            
+            /* Adjust spacing and columns on larger screens */
+            @media (min-width: 768px) {
+                .masonry-gallery-container {
+                    gap: 15px;
+                }
+            }
+        
+            @media (min-width: 1200px) {
+                .masonry-gallery-container {
+                    gap: 20px;
+                }
+            }
+        
+                </style>
+
     </head>
 
     <body>
@@ -123,7 +154,55 @@
         </div>
         <!-- Modal Search End -->
 
-
+        <!-- Feature Start -->
+        <div class="container-fluid feature bg-light py-5" style="background-color: #ffa51e9f;">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Our Cool Gallery</h2>
+                </div>
+            </div>
+            <div class="masonry-gallery-container">
+                <div class="masonry-grid">
+                    <!-- Image Blocks -->
+                    <div class="grid-item"><img src="img/aqeekah/Image- (1).jpg" class="img-fluid rounded shadow-sm" alt="Image 1"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (2).jpg" class="img-fluid rounded shadow-sm" alt="Image 2"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (3).jpg" class="img-fluid rounded shadow-sm" alt="Image 3"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (4).jpg" class="img-fluid rounded shadow-sm" alt="Image 4"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (5).jpg" class="img-fluid rounded shadow-sm" alt="Image 5"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (6).jpg" class="img-fluid rounded shadow-sm" alt="Image 6"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (7).jpg" class="img-fluid rounded shadow-sm" alt="Image 7"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (8).jpg" class="img-fluid rounded shadow-sm" alt="Image 8"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (9).jpg" class="img-fluid rounded shadow-sm" alt="Image 9"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image- (10).jpg" class="img-fluid rounded shadow-sm" alt="Image 10"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (1).jpg" class="img-fluid rounded shadow-sm" alt="Image 1"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (2).jpg" class="img-fluid rounded shadow-sm" alt="Image 2"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (3).jpg" class="img-fluid rounded shadow-sm" alt="Image 3"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (4).jpg" class="img-fluid rounded shadow-sm" alt="Image 4"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (5).jpg" class="img-fluid rounded shadow-sm" alt="Image 5"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (6).jpg" class="img-fluid rounded shadow-sm" alt="Image 6"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (7).jpg" class="img-fluid rounded shadow-sm" alt="Image 7"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (8).jpg" class="img-fluid rounded shadow-sm" alt="Image 8"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (9).jpg" class="img-fluid rounded shadow-sm" alt="Image 9"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (10).jpg" class="img-fluid rounded shadow-sm" alt="Image 10"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (11).jpg" class="img-fluid rounded shadow-sm" alt="Image 11"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (12).jpg" class="img-fluid rounded shadow-sm" alt="Image 12"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (13).jpg" class="img-fluid rounded shadow-sm" alt="Image 13"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (14).jpg" class="img-fluid rounded shadow-sm" alt="Image 14"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (15).jpg" class="img-fluid rounded shadow-sm" alt="Image 15"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (16).jpg" class="img-fluid rounded shadow-sm" alt="Image 16"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (17).jpg" class="img-fluid rounded shadow-sm" alt="Image 17"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (18).jpg" class="img-fluid rounded shadow-sm" alt="Image 18"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (19).jpg" class="img-fluid rounded shadow-sm" alt="Image 19"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (20).jpg" class="img-fluid rounded shadow-sm" alt="Image 20"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (21).jpg" class="img-fluid rounded shadow-sm" alt="Image 21"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (22).jpg" class="img-fluid rounded shadow-sm" alt="Image 22"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (23).jpg" class="img-fluid rounded shadow-sm" alt="Image 23"></div>
+                    <div class="grid-item"><img src="img/aqeekah/Image_ (24).jpg" class="img-fluid rounded shadow-sm" alt="Image 24"></div>
+                    <!-- End of Image Blocks -->
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
         
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s" style="background-color: #ffa51e9f;">
