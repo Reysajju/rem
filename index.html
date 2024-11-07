@@ -34,6 +34,20 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    color: #fff;
+}
+
+
+        </style>
     </head>
 
     <body>
@@ -101,169 +115,60 @@
 
 <!--end Nav-->
 
-            <!-- Carousel Start -->
-            <div class="carousel-header">
-                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="3"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="4"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="5"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="6"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="7"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="8"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-1">
-                                <div class="carousel-caption-1-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;">Crafting Moments, Creating Memories</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;">From weddings to corporate events, we turn your vision into reality, 
-                                    </p>
-                                    <div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-2">
-                                <div class="carousel-caption-2-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem Production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Where Every Detail Matters</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">From intimate gatherings to grand occasions, we make every event unforgettable, 
-                                    </p>
-                                    <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/carousel-3.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-3">
-                <!--<div class="carousel-caption-3-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem Production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Where Every Detail Matters</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">From intimate gatherings to grand occasions, we make every event unforgettable, 
-                                    </p>
-                                    <div class="carousel-caption-3-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                            <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                            <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>-->
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/carousel-4.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-4">
-                                <div class="carousel-caption-4-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem Production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Where Every Detail Matters</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">From intimate gatherings to grand occasions, we make every event unforgettable, 
-                                    </p>
-                                    <div class="carousel-caption-4-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/carousel-5.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-5">
-                                <div class="carousel-caption-5-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem Production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Where Every Detail Matters</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">From intimate gatherings to grand occasions, we make every event unforgettable, 
-                                    </p>
-                                    <div class="carousel-caption-5-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                       
-                        <div class="carousel-item">
-                            <img src="img/carousel-6.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-6">
-                                <div class="carousel-caption-6-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem Production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Where Every Detail Matters</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">From intimate gatherings to grand occasions, we make every event unforgettable, 
-                                    </p>
-                                    <div class="carousel-caption-6-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                      
-                        <div class="carousel-item">
-                            <img src="img/carousel-7.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-7">
-                                <div class="carousel-caption-7-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem Production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Where Every Detail Matters</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">From intimate gatherings to grand occasions, we make every event unforgettable, 
-                                    </p>
-                                    <div class="carousel-caption-7-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                        <div class="carousel-item">
-                            <img src="img/carousel-8.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-8">
-                                <div class="carousel-caption-8-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem Production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Where Every Detail Matters</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">From intimate gatherings to grand occasions, we make every event unforgettable, 
-                                    </p>
-                                    <div class="carousel-caption-8-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                       
-                        <div class="carousel-item">
-                            <img src="img/carousel-9.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="carousel-caption-9">
-                                <div class="carousel-caption-9-content" style="max-width: 900px;">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Rem Production</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">Where Every Detail Matters</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">From intimate gatherings to grand occasions, we make every event unforgettable, 
-                                    </p>
-                                    <div class="carousel-caption-9-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a href="tel:+923132085283" class="btn rounded-pill d-inline-flex flex-shrink-0 py-2 px-4" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Call Now</a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="service.html" style="color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon btn btn-primary fadeInLeft animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s; color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;"> <i class="fa fa-angle-left fa-3x" ></i></span>
-                        <span class="visually-hidden" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                        <span class="carousel-control-next-icon btn btn-primary fadeInRight animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s; color: #f0ff1e; border: 1px solid #FFA51E; background-color: transparent;"><i class="fa fa-angle-right fa-3x"></i></span>
-                        <span class="visually-hidden" style="color: #FFA51E; border: 1px solid #FFA51E; background-color: transparent;">Next</span>
-                    </button>
-                </div>
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Slide 1 with text overlay -->
+        <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="img-fluid w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h4 class="text-white text-uppercase fw-bold mb-4">Rem Production</h4>
+                <h1 class="display-2 text-capitalize text-white mb-4">Where Every Detail Matters</h1>
+                <p class="mb-5 fs-5 text-white">From intimate gatherings to grand occasions, we make every event unforgettable.</p>
+                <a href="tel:+923132085283" class="btn btn-primary">Call Now</a>
+                <a href="service.html" class="btn btn-secondary">Explore</a>
             </div>
-            <!-- Carousel End -->
-       <!-- </div> -->
-        <!-- Navbar & Hero End -->
+        </div>
+
+        <!-- Slide 2 with text overlay -->
+        <div class="carousel-item">
+            <img src="img/slide2.jpg" class="img-fluid w-100" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h4 class="text-white text-uppercase fw-bold mb-4">Rem Production</h4>
+                <h1 class="display-2 text-capitalize text-white mb-4">Your Vision, Our Passion</h1>
+                <p class="mb-5 fs-5 text-white">Creating events that leave a lasting impression.</p>
+                <a href="tel:+923132085283" class="btn btn-primary">Call Now</a>
+                <a href="service.html" class="btn btn-secondary">Explore</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 without text overlay -->
+        <div class="carousel-item">
+            <img src="img/slide3.jpg" class="img-fluid w-100" alt="Slide 3">
+        </div>
+
+        <!-- Slide 4 without text overlay -->
+        <div class="carousel-item">
+            <img src="img/slide4.jpg" class="img-fluid w-100" alt="Slide 4">
+        </div>
+
+        <!-- Additional slides without text overlay -->
+        <div class="carousel-item">
+            <img src="img/slide5.jpg" class="img-fluid w-100" alt="Slide 5">
+        </div>
+    </div>
+
+    <!-- Carousel controls (optional) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Navbar & Hero End -->
 
         <!-- feature Start -->
         <div class="container-fluid feature bg-light py-5" style="background-color: #ffa51e9f;">
